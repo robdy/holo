@@ -33,5 +33,6 @@ steps:
     
 - task: AzureWebApp@1
   inputs:
+    azureSubscription: 'Pay-As-You-Go-holo'
     appName: 'holo6742'
     package: $(System.ArtifactsDirectory)/**/*.zip    
