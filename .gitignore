@@ -2,5 +2,5 @@
 node_modules
 
 # privy to me
-src/config.json
 src/serviceAccountKey.json
+.env

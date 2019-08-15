@@ -22,7 +22,6 @@ steps:
     secureFile: 'serviceAccountKey.json'
 
 - script: |
-    cp $(serviceAccountKey.secureFilePath) $(Build.ArtifactStagingDirectory)\src\
+    cp $(serviceAccountKey.secureFilePath) src/
     npm install
-    npm start
-  displayName: 'npm install and build'
+  displayName: 'npm install'
