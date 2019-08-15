@@ -22,5 +22,6 @@ steps:
     secureFile: 'serviceAccountKey.json'
 
 - script: |
+    cp $(serviceAccountKey.secureFilePath) src/
     npm install
   displayName: 'npm install'
