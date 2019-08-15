@@ -1,4 +1,4 @@
-const config = require('../config.json');
+const config = require('../config.js');
 
 exports.run = (message, args) => {
   const cmds = {

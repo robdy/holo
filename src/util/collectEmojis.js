@@ -1,5 +1,5 @@
 const emoji = require('node-emoji');
-const config = require('../config.json');
+const config = require('../config.js');
 const { parseServerEmojis, parseDefaultEmojis, parseReactionEmojis, } = require('./parseEmojis');
 const { formatEmojis, } = require('./formatData');
 const { writeData, } = require('./writeData');
@@ -31,6 +31,7 @@ module.exports = {
       if (collected.size == 0) {
         return;
       }
+      console.log("Found emoji")
 
       // parse message for user reactions
       const parsedReactionEmojis = parseReactionEmojis(collected);

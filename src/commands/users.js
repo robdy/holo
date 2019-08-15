@@ -1,6 +1,6 @@
 const admin = require('firebase-admin');
 const emoji = require('node-emoji');
-const config = require('../config.json');
+const config = require('../config.js');
 const { error, } = require('../util/log');
 const { pager, } = require('../util/pager');
 const {

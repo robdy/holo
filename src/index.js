@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const admin = require('firebase-admin');
-const config = require('./config.json');
+const dotenv = require('dotenv').config();
+const config = require('./config.js');
 const serviceAccount = require('./serviceAccountKey.json');
 
 // initialize firebase

@@ -1,4 +1,4 @@
-const config = require('../config.json');
+const config = require('../config.js');
 
 module.exports = (client) => {
   const prefix = !config.prefix ? `@${client.user.username} ` : config.prefix;
