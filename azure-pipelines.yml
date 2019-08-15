@@ -30,3 +30,8 @@ steps:
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
+    
+- task: AzureWebApp@1
+  inputs:
+    appName: 'holo6742'
+    package: $(System.ArtifactsDirectory)/**/*.zip    
