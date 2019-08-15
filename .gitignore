@@ -3,3 +3,4 @@ node_modules
 
 # privy to me
 src/serviceAccountKey.json
+.env
